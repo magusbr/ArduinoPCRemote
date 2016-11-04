@@ -1,0 +1,11 @@
+*.o
+*.so
+*.a
+*.la
+*.exe
+*.dll
+*.pdf
+*.zip
+*.png
+*.gif
+*.jpg
