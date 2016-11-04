@@ -217,6 +217,14 @@ void Remote_::pause(void)
 	m[1] = 0;
 	HID().SendReport(4,m,2);
 }
+
+void Remote_::playpause(void)
+{
+	u8 m[2];
+	m[0] = REMOTE_PLAYPAUSE;
+	m[1] = 0;
+	HID().SendReport(4,m,2);
+}
  
 void Remote_::stop(void)
 {

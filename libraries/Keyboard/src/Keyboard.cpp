@@ -74,6 +74,7 @@ static const uint8_t _hidReportDescriptor[] PROGMEM = {
     0x75, 0x01,                    //	Report Size (1)
     0x95, 0x02,                    //	Report Count (2)
     0x81, 0x06,                    //	Input (Data, Variable, Relative)
+	0x09, 0xcd,                    //   Usage (play/pause)
 
     0x09, 0xe2,                    //	Usage (Mute)
     0x95, 0x01,                    //	Report Count (1)

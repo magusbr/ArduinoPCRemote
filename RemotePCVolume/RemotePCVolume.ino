@@ -38,7 +38,7 @@ void loop() {
     Serial.println(key_pressed);
 	
 	if (key_pressed == -10044) {
-      Remote.pause();
+      Remote.playpause();
       Remote.clear();
 	  ok_pause = 1;
     }
