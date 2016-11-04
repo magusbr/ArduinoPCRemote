@@ -1,7 +1,8 @@
 //#include <USBAPI.h>
-#include <HID.h>
-#include <Keyboard.h>
+//#include <HID.h>
+//#include <Keyboard.h>
 #include <IRremote.h>
+#include <HID-Project.h>
 /*
 play -10044
 << -27617
@@ -38,21 +39,31 @@ void loop() {
     Serial.println(key_pressed);
 	
 	if (key_pressed == -10044) {
-      Remote.playpause();
-      Remote.clear();
-	  ok_pause = 1;
+      //Remote.playpause();
+      //Remote.clear();
+      Consumer.write(MEDIA_PLAY_PAUSE);
+	    ok_pause = 1;
     }
   
     if (key_pressed == 16134) {
-      Remote.increase();
-      Remote.clear();
-	  ok = 1;
+      //Remote.increase();
+      //Remote.clear();
+      Consumer.write(MEDIA_VOLUME_UP);
+	    ok = 1;
     }
   
     if (key_pressed == -27617) {
-      Remote.decrease();
-      Remote.clear();
-	  ok = 1;
+      //Remote.decrease();
+      //Remote.clear();
+      Consumer.write(MEDIA_VOLUME_DOWN);
+	    ok = 1;
+    }
+
+    if (key_pressed == 32603) {
+      //Remote.next();
+      //Remote.clear();
+      Consumer.write(MEDIA_NEXT);
+      ok_pause = 1;
     }
 	
     if (ok) delay(300);

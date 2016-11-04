@@ -195,7 +195,6 @@ void Remote_::decrease(void)
  
 void Remote_::mute(void)
 {
-	Serial.print("mute sent\n");
 	u8 m[2];
 	m[0] = VOLUME_MUTE;
 	m[1] = 0;
@@ -218,13 +217,13 @@ void Remote_::pause(void)
 	HID().SendReport(4,m,2);
 }
 
-void Remote_::playpause(void)
-{
-	u8 m[2];
-	m[0] = REMOTE_PLAYPAUSE;
-	m[1] = 0;
-	HID().SendReport(4,m,2);
-}
+// void Remote_::playpause(void)
+// {
+	// u8 m[2];
+	// m[0] = REMOTE_PLAYPAUSE;
+	// m[1] = 0;
+	// HID().SendReport(4,m,2);
+// }
  
 void Remote_::stop(void)
 {
@@ -245,26 +244,26 @@ void Remote_::next(void)
 void Remote_::previous(void)
 {
 	u8 m[2];
-	m[0] = REMOTE_PREVIOUS;
-	m[1] = 0;
+	m[0] = 0;
+	m[1] = REMOTE_PREVIOUS >> 8;
 	HID().SendReport(4,m,2);
 }
  
-void Remote_::forward(void)
-{
-	u8 m[2];
-	m[0] = 0;
-	m[1] = REMOTE_FAST_FORWARD >> 8;
-	HID().SendReport(4,m,2);
-}
+// void Remote_::forward(void)
+// {
+	// u8 m[2];
+	// m[0] = 0;
+	// m[1] = REMOTE_FAST_FORWARD >> 8;
+	// HID().SendReport(4,m,2);
+// }
  
-void Remote_::rewind(void)
-{
-	u8 m[2];
-	m[0] = 0;
-	m[1] = REMOTE_REWIND >> 8;
-	HID().SendReport(4,m,2);
-}
+// void Remote_::rewind(void)
+// {
+	// u8 m[2];
+	// m[0] = 0;
+	// m[1] = REMOTE_REWIND >> 8;
+	// HID().SendReport(4,m,2);
+// }
  
 void Remote_::clear(void)
 {

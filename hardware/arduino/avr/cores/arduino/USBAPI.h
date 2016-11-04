@@ -157,30 +157,30 @@ extern Serial_ Serial;
 //================================================================================
 //	Remote 
  
-// #define REMOTE_CLEAR 0
-// #define VOLUME_UP 1
-// #define VOLUME_DOWN 2
-// #define VOLUME_MUTE 4
-// #define REMOTE_PLAY 8
-// #define REMOTE_PAUSE 16
-// #define REMOTE_STOP 32
-// #define REMOTE_NEXT 64
-// #define REMOTE_PREVIOUS 128
-// #define REMOTE_FAST_FORWARD 256
-// #define REMOTE_REWIND 512
- 
 #define REMOTE_CLEAR 0
 #define VOLUME_UP 1
 #define VOLUME_DOWN 2
-#define REMOTE_PLAYPAUSE 4
-#define VOLUME_MUTE 8
-#define REMOTE_PLAY 16
-#define REMOTE_PAUSE 32
-#define REMOTE_STOP 64
-#define REMOTE_NEXT 128
-#define REMOTE_PREVIOUS 256
-#define REMOTE_FAST_FORWARD 512
-#define REMOTE_REWIND 1024
+#define VOLUME_MUTE 4
+#define REMOTE_PLAY 8
+#define REMOTE_PAUSE 16
+#define REMOTE_STOP 32
+#define REMOTE_NEXT 64
+#define REMOTE_PREVIOUS 128
+#define REMOTE_FAST_FORWARD 256
+#define REMOTE_REWIND 512
+ 
+// #define REMOTE_CLEAR 0
+// #define VOLUME_UP 1
+// #define VOLUME_DOWN 2
+// #define REMOTE_PLAYPAUSE 4
+// #define VOLUME_MUTE 8
+// #define REMOTE_PLAY 16
+// #define REMOTE_PAUSE 32
+// #define REMOTE_STOP 64
+// #define REMOTE_NEXT 128
+// #define REMOTE_PREVIOUS 256
+// #define REMOTE_FAST_FORWARD 512
+// #define REMOTE_REWIND 1024
 
 class Remote_
 {
