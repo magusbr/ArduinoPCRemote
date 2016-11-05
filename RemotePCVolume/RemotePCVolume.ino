@@ -45,14 +45,14 @@ void loop() {
 	    ok_pause = 1;
     }
   
-    if (key_pressed == 16134) {
+    if (key_pressed == -27617) {
       //Remote.increase();
       //Remote.clear();
       Consumer.write(MEDIA_VOLUME_UP);
 	    ok = 1;
     }
   
-    if (key_pressed == -27617) {
+    if (key_pressed == 28354) {
       //Remote.decrease();
       //Remote.clear();
       Consumer.write(MEDIA_VOLUME_DOWN);
@@ -62,7 +62,7 @@ void loop() {
     if (key_pressed == 32603) {
       //Remote.next();
       //Remote.clear();
-      Consumer.write(MEDIA_NEXT);
+      Consumer.write(MEDIA_RECORD);
       ok_pause = 1;
     }
 	
