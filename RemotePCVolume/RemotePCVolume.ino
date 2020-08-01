@@ -1,5 +1,5 @@
-#include <IRremote.h>
-#include "HID-Project.h"
+#include <IRremote.h> // Works with Robot IR Remote version 1.0.2
+#include "HID-Project.h" // require NicoHood updated version (like 2.6.1)
 /*
 play -10044
 << -27617
